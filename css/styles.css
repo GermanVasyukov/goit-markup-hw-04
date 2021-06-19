@@ -112,6 +112,9 @@ header{
 .site-nav-list .link:focus{
     color: var(--accent-color);
     fill: currentColor;
+    border-bottom: 4px solid;
+    border-radius: 2px;
+   
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -275,6 +278,33 @@ header{
 .interests-box{
     width: calc((100%-90px) / 3);
     width: 370px;
+    position: relative;
+    overflow: hidden;
+}
+.interests-text{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+
+    /* font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center; */
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
+}
+.interests-text .text{
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 27px;
 }
 /* team */
 .team{
